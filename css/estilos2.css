@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fcf8f87a;
+    line-height: 1.6;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1000;
+    transition: background-color 1.5s ease;
+  }
+  header:hover{
+    background-color: rgba(249,248,245,255);
+    color:black;
+  }
+  header:hover a{
+    color:black;
+  }
+  .logo img{
+    width: 130px;
+    height: 75px;
+    margin-left: 60px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav li a{
+    color: rgba(249,248,245,255);
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  
+  nav li a:hover{
+    color: #fe000000;
+  }
+
+.cta {
+    display: inline-block;
+    background: #f06e51;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta:hover {
+    background: #333;
+}
+
+section {
+    padding: 60px 20px;
+}
+.contenidouno{
+    background-image:url(../imagen/pexels-lazybird-1260727.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid white
+}
+
+.about {
+    text-align: center;
+    padding: 50px 0;
+    height: 400px;
+    background-image:url(../imagen/pexels-lazybird-1260727.jpg) ;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    border: 1.5px solid white
+    
+}
+  
+.stats {
+    display: flex;
+    justify-content: space-around;
+ }
+  
+.stat {
+    text-align: center;
+    vertical-align: middle;
+}
+  
+.icon {
+    font-size: 3rem;
+    color: #f00; /* Rojo para los iconos */
+    display: flex;
+    align-items: center;
+    padding: auto;
+}
+  
+.number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+    
+}
+  
+.description {
+    font-size: 1.2rem;
+    padding: 10px   ;
+    color: #030000;
+}
+
+.contenido2{
+    background-image:url(../imagen/pexels-lazybird-1260727.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid white
+}
+
+.contenido3{
+    background-image:url(../imagen/pexels-hngstrm-2341290.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 990px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid white
+
+}
+.contenido3 img{
+    margin-top: 10px;
+    width: 250px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    
+}
+.contenido4{
+    background-image:url(../imagen/pexels-hngstrm-2341290.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 990px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid white
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #050000;
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    animation:mover-arriba-abajo 3s ;
+}
+@keyframes mover-arriba-abajo {
+    from{ 
+        transform: translateY(-100px);
+
+    }
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: hsl(0, 0%, 0%);
+    animation:mover-arriba-abajo 3s ;
+    font-family: "Protest Strike", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem ;
+    
+}
+@keyframes mover-arriba-abajo {
+    from{ 
+        transform: translateY(-100px)
+
+    }
+}
+
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+}
+
+.service {
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f06e51;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.2rem;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    background: #f06e51;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #333;
+}
+
+.footer {
+    background-color: rgb(87, 87, 87);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 20px;
+    
+}
+  
+.footer-contact {
+    margin-bottom: 20px;
+}
+  
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #050000;
+}
+  
+.footer-subscribe {
+    margin-bottom: 20px;
+}
+.footer-subscribe p{
+    color: #050000;
+}
+  
+.footer-subscribe input {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+  
+.footer-subscribe button {
+    padding: 10px 20px;
+    
+   
+  background-color: red;
+    
+   
+  color: white;
+    
+   
+  border: none;
+    
+   
+  border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+  
+.footer-subscribe button:hover {
+    background-color: darkred;
+}
+  
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.footer-bottom p{
+    color: #050000;
+}

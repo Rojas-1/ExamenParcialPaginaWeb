@@ -1,0 +1,410 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1000;
+    transition: background-color 1.5s ease;
+  }
+  header:hover{
+    background-color: rgba(249,248,245,255);
+    color:black;
+  }
+  header:hover a{
+    color:black;
+  }
+  .logo img{
+    width: 130px;
+    height: 75px;
+    margin-left: 60px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav li a{
+    color: rgba(249,248,245,255);
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  
+  nav li a:hover{
+    color: #fe000000;
+  }
+
+
+.hero {
+    background-color: #444;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.cta {
+    background-color: #556b2f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #6b8e23;
+}
+
+
+.productos {
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url(/imagen/fondo3.jpg); 
+    background-color: #f9f9f9; 
+    background-size: auto; 
+}
+
+.productos h2 {
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.productos-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.producto-image-container {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.producto img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.producto:hover img {
+    transform: scale(1.05);
+}
+
+.producto h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.producto p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.precio {
+    color: #556b2f;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.btn-comprar {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #556b2f;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #6b8e23;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.footer {
+    background-color: rgb(87, 87, 87);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 20px;
+    
+}
+  
+.footer-contact {
+    margin-bottom: 20px;
+}
+  
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #050000;
+}
+  
+.footer-subscribe {
+    margin-bottom: 20px;
+}
+.footer-subscribe p{
+    color: #050000;
+}
+  
+.footer-subscribe input {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+  
+.footer-subscribe button {
+    padding: 10px 20px;
+    
+   
+  background-color: #556b2f;
+    
+   
+  color: white;
+    
+   
+  border: none;
+    
+   
+  border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+  
+.footer-subscribe button:hover {
+    background-color: #769443;
+}
+  
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.footer-bottom p{
+    color: #050000;
+}
+
+
+.mas-productos {
+    padding: 50px 20px;
+    text-align: center;
+    background-image: url(/imagen/fondo2-modified.jpg);
+    background-color: #eeeeee; 
+    background-size: auto;
+    
+}
+
+.mas-productos h2 {
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.productos-grid-5 {
+    display: flex;
+    gap: 30px; 
+    justify-content: center; 
+}
+
+.producto.mas-producto {
+    width: 350px; 
+    flex-shrink: 0; 
+    background: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    transition: transform 0.3s; 
+}
+
+.producto.mas-producto:hover {
+    transform: scale(1.05); 
+}
+.promociones {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.promociones h2 {
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.promociones-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.promocion {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.promocion h3 {
+    color: #556b2f;
+    font-size: 1.5em;
+}
+
+.promocion p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.promocion .fecha {
+    font-size: 0.9em;
+    color: #999;
+    margin-top: 5px;
+}
+
+.btn-promocion {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #556b2f;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+.btn-promocion:hover {
+    background-color: #556b2f;
+    transform: scale(1.05);
+}
+
+.promocion:hover {
+    transform: scale(1.02);
+}
+.testimonios {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonios h2 {
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.testimonios-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonio {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.testimonio p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.testimonio h4 {
+    font-size: 1.1em;
+    color: #556b2f;
+    font-weight: bold;
+    margin: 0;
+}
+
+.testimonio:hover {
+    transform: scale(1.02);
+}
